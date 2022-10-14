@@ -21,13 +21,14 @@ p {
 
 /* layout & nav */
 .layout {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 40px auto;
+  font-size: 20px;
 }
 nav .links {
   display: inline-block;

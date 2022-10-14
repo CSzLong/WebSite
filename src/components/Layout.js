@@ -9,7 +9,7 @@ export default function Layout({children}) {
         <div className='content'>
             { children }
         </div>
-        <footer><p>Copyright 2022 Aptos World</p></footer>
+        <footer><p>Copyright 2022 Aptos Global</p></footer>
     </div>
   )
 }
