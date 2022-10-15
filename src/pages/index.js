@@ -13,9 +13,6 @@ export default function Home({data}) {
     <Layout>
       <section className={styles.header}>
         <div>
-          <img src="logo.png" alt="Logo"/>
-        </div>
-        <div>
           <h3>Welcome to Aptos Global</h3>
           <p>亚太地区首个专注于资讯教育、招聘孵化、开发者社区的Aptos生态服务机构</p>
           <Link className={styles.btn} to="/projects">My Project Portfolio</Link>
@@ -44,7 +41,7 @@ export default function Home({data}) {
         <div className={styles.posts}>
           {
             weekly_posts.map(post => (
-              <Link to={post.frontmatter.slug} key={post.id}>
+              <Link to={"/posts/" + post.frontmatter.remark} key={post.id}>
                 <GatsbyImage image={post.frontmatter.featuredImg.childImageSharp.gatsbyImageData}/>
                 <h3>{post.frontmatter.title}</h3>
               </Link> 
@@ -102,6 +99,7 @@ export const query = graphql`
           }
           slug
           title
+          remark
         }
       }
     }
@@ -120,6 +118,7 @@ export const query = graphql`
           }
           slug
           title
+          remark
         }
       }
     }
@@ -138,6 +137,7 @@ export const query = graphql`
           }
           slug
           title
+          remark
         }
       }
     }
@@ -156,6 +156,7 @@ export const query = graphql`
           }
           slug
           title
+          remark
         }
       }
     }

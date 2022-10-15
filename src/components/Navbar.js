@@ -5,7 +5,7 @@ export default function Navbar () {
 
   return (
     <nav>
-        <h1>Aptos Global</h1>
+        <img src="linelogo.png" alt="lineLogo" width="30%"/>
         <div className='links'>
             <Link to="/">Home</Link>
             <Link to="/">合作伙伴</Link>
