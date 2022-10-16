@@ -1,11 +1,22 @@
-import { Link } from 'gatsby'
+import { graphql, Link, useStaticQuery } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 export default function Navbar () {
-
+  const data = useStaticQuery(graphql`
+      query logo {
+        file(relativePath: {eq: "linelogo.png"}) {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+  `) 
   return (
     <nav>
-        <img src="linelogo.png" alt="lineLogo" width="30%"/>
+        <Link to="/" className='logolinks'>
+          <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} alt="linelogo"/>
+        </Link>
         <div className='links'>
             <Link to="/">Home</Link>
             <Link to="/">合作伙伴</Link>

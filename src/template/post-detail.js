@@ -17,6 +17,10 @@ export default function PostDetail({data}) {
             <h2>{data.markdownRemark.frontmatter.title}</h2>
             <div className={styles.html} dangerouslySetInnerHTML={{__html: html }}/>
         </div>
+        <div><h3>关注Aptos Global公众号，了解更多Aptos 讯息！
+            </h3>
+            <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className={styles.wechatlinks}/>
+        </div>
     </Layout>
   )
 }
@@ -33,6 +37,11 @@ export const query = graphql`
             }
             }
         }
+        }
+        file(relativePath: {eq: "Wechat_QR.png"}) {
+            childImageSharp {
+              gatsbyImageData(sizes: "35%")
+            }
         }
     }
   `

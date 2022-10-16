@@ -12,9 +12,10 @@
     font-weight: 400;
     margin-bottom: 20px;
   }
-.header img {
+.wechatlinks {
     width: 50%;
-  }
+    text-align: center;
+} 
 .btn {
     display: inline-block;
     background: #bb0e0e;

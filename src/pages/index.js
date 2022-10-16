@@ -17,10 +17,12 @@ export default function Home({data}) {
           <p>亚太地区首个专注于资讯教育、招聘孵化、开发者社区的Aptos生态服务机构</p>
           <Link className={styles.btn} to="/projects">My Project Portfolio</Link>
         </div>
+        <div>
+          <GatsbyImage image={data.file.childImageSharp.gatsbyImageData} className={styles.wechatlinks}/>
+        </div>
       </section>
       <br/>
       <br/>
-
       <section>
         <h3 className={styles.header}>技术发展</h3>
         <hr/>
@@ -84,6 +86,11 @@ export default function Home({data}) {
 //export the posts
 export const query = graphql`
   query MyQuery {
+    file(relativePath: {eq: "Wechat_QR.png"}) {
+      childImageSharp {
+        gatsbyImageData(sizes: "35%")
+      }
+    }
     technology: allMarkdownRemark(
       limit: 3
       sort: {fields: frontmatter___date, order: DESC}

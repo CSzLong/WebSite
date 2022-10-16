@@ -18,10 +18,9 @@ p {
   margin: 16px auto;
   line-height: 1.5em;
 }
-
 /* layout & nav */
 .layout {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 nav {
@@ -32,6 +31,10 @@ nav {
 }
 nav .links {
   display: inline-block;
+  text-align: right;
+}
+nav .logolinks {
+  width: 35%;
   text-align: right;
 }
 nav a {

@@ -1,15 +1,30 @@
 .details h2 {
-    font-size: 3.5em;
-    margin-top: 80px;
+    font-size: 2.5em;
+    margin-top: 40px;
+    text-align: center;
 }
 .details h3 {
-    font-size: 2em;
-    font-weight: 400;
-    margin-bottom: 40px;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top:30px;
+    margin-bottom: 10px;
+    text-align: left;
 }
 .html {
     margin-top: 40px;
+    width: 75%;
+    margin-left: 100px;
+}
+.html a{
+    background: white;
+    color: blue;
 }
 .featured {
     margin-bottom: 40px;
+    text-align: center;
+}
+
+.wechatlinks {
+    width: 35%;
+    text-align: right;
 }

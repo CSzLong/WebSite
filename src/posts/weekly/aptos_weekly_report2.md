@@ -55,5 +55,3 @@ Github链接：https://github.com/econia-labs/teach-yourself-move
 7. 第一个实现EVM 链到Aptos 链上的跨链桥项目**Mover**宣布开启Mover冠军计划的第二轮。
 
 8. Aptos 链上IDO 平台**AptosLaunch**已于9月16日发布新官网。
-
-关注Aptos Global 公众号，了解更多Aptos 讯息！

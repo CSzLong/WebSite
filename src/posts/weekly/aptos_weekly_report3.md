@@ -44,7 +44,3 @@ APTOS : ZERO Testnet NFT 是为了纪念Aptos测试网，以及社区为Aptos �
 9. Aptos 链上聚合收益平台Satay Labs 与PontemNetwork 达成合作。
 
 10. Aptos 第一个对用户友好的手机端钱包Evo Wallet 宣布加入Aptos 生态，并很快上线产品。
-
-关注Aptos Global
-
-发现Web3 时代新机遇
